@@ -1,73 +1,39 @@
-.App {
-  text-align: center;
-}
+.container {
+  width: 100vw;
+  margin-left: 50px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.selected {
+  filter: invert(95%) sepia(41%) saturate(6882%) hue-rotate(54deg)
+    brightness(90%) contrast(108%);
+  height: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.booked {
+  filter: invert(15%) sepia(99%) saturate(7455%) hue-rotate(2deg)
+    brightness(101%) contrast(106%);
+  height: 20px;
 }
 
-.container-1 {
-  display: inline-block;
-  margin-right: 60px;
-  margin: 20px;
-  border: 2px solid black;
-  background: lightseagreen;
-  padding: 6px;
+.seat {
+  filter: invert(0%) sepia(0%) saturate(1924%) hue-rotate(288deg)
+    brightness(90%) contrast(100%);
+  width: 35px;
+  height: 35px;
 }
 
-.inner-content {
-  margin: 10px;
+.size {
+  width: 35px;
+  height: 35px;
 }
-
-/* Box Effect */
-
-.box {
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
-  animation: shadowAnimation 2s infinite alternate;
-}
-
-@keyframes shadowAnimation {
-  0% {
-    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
-  }
-  100% {
-    box-shadow: 0 0 30px rgba(52, 152, 219, 1);
-  }
-}
-
-/* Logo Button effects added*/
 
 .btn {
   color: black;
@@ -91,6 +57,24 @@
   filter: invert(95%) sepia(41%) saturate(6882%) hue-rotate(54deg)
     brightness(90%) contrast(108%);
 }
+img {
+  width: 60vw;
+}
+
+h3 {
+  padding: 10px;
+}
+
+p {
+  padding: 10px;
+}
+
+.price {
+  background-color: red;
+  color: white;
+}
+
+/* Button effects added*/
 
 button {
   border: none;
